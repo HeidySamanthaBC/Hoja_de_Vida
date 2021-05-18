@@ -1,0 +1,283 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    scroll-behavior: smooth;
+}
+body {
+    font-family:'Open Sans',sans-serif;
+ 
+
+}
+.contenedor{
+    width: 90%;
+    overflow: hidden;
+    margin:auto;
+    padding: 60px 0;
+}
+header{
+    height: 600px;
+    width: 100%;
+    background-image: linear-gradient(-20deg, rgba(185, 33, 255, 0.322) 0%, rgba(33, 213, 253, 0.267) 100%),url(../img/imagen\ de\ pc.jpg); 
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+.head{
+    text-align: center;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color:white;
+}
+.hamburguer{
+    position: fixed;
+    z-index: 10;
+    top: 30px;
+    right: 30px;
+    background:#fff;
+    width: 40px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+}
+.menu-navegacion {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 30vw;
+    height: 100%;
+    background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%); 
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    transition:transform .2s ease-in-out;
+    transform: translate(110%);
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+}
+.spread{
+    transform: translate(0);
+}
+.menu-navegacion a{
+    color: white;
+    text-decoration: none ;
+}
+h1{
+    font-size: 400%;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+.copy{
+    font-weight: 200;
+    font-size: 20px;
+    margin-left:  7%; 
+    margin-bottom: 3%;
+    
+}
+.contenedormayor{
+    background:rgb(221, 221, 230);
+    text-align:justify;
+    margin-bottom: 5%;
+}
+
+ /*Trayectoria Educativa*/
+
+.subtitulo{
+    text-align: center;
+    font-weight: 600;
+    color:#2575fc;
+    font-size: 40px;
+
+}
+.contenedor-trayectoria{
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+    flex-wrap: wrap;  
+}
+
+.contenedor-trayectoria img{
+    width: 35%;
+}
+.graduacion-trayectoria{
+    width: 45%;
+
+}
+.trayectoria{
+     margin-bottom: 10px;
+}
+.n-trayectoria{
+    margin-bottom: 15px;
+    color:#2575fc;
+    margin-top: 4%;
+}
+.number{
+    display: inline-block;
+    background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
+    width: 30px;
+    height: 30px;
+    color:white;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 30px;
+    margin-right: 5px;
+}
+/*habilidades*/
+.contenedorh{
+    margin-top: 3%;
+}
+.contenedor-habilidades{
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+    flex-wrap: wrap;   
+}
+.contenedor-habilidades img{
+    width: 30%;
+    margin-right: 2%;
+    margin-left: 3%;
+}
+.habilidades-personales{
+    width: 45%;
+}
+#texto{
+    text-align: justify;
+}
+.habilidad{
+    margin-bottom: 15px;
+    margin-right: 5%;
+}
+/*hobbies*/
+.contenedor-hobbies{
+    margin-top: 3%;
+}
+.hobbies{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.cont-hobbies{
+    width: 30%;
+    text-align: center;
+}
+.cont-hobbies img{
+    width: 70%;
+    display: block;
+    margin:0 auto;
+    border-radius: 15px;
+    margin-top: 3%;
+}
+.n-hobbies{
+    display:inline-block;
+    margin-top: 2%;
+    margin-bottom: 10%;
+    width: 100%;
+    font-weight: 400;
+}
+.publicacion-body .post-link{
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    
+    padding: 10px;
+    background: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
+    color: #fff;
+    width: 245px;
+    margin-top: 2%;
+    margin-right: 3%;
+    margin-left: 2%;
+    border-radius: 20px;
+    box-shadow:1px 2px 6px 1px rgba(0, 0, 0, .1);
+}
+.publicacion-body .post-link:hover{
+    background: #3378c7;
+    box-shadow:1px 2px 6px 1px rgba(0, 0, 0, .1);
+    transform:translateY(-2px);
+}
+footer{
+    background:linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
+    padding-bottom:0.1px;  
+}
+.brand{
+    color:#fff;
+}
+.n-contacto{
+    color:#fff;
+    margin-bottom: 0%;
+}
+.line{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 2px;
+    background: #fff;
+    margin-bottom: 30px;
+}
+@media screen and (max-width:800px){
+.menu-navegacion{
+    width: 50vw;
+}
+.contenedor-trayectoria img{
+    width:80%;
+    margin-bottom: 40px;
+} 
+.graduacion-trayectoria{
+    width: 70%;
+}
+.contenedor-habilidades img{
+    width:50%;
+    margin-bottom: 40px;    
+} 
+.habilidades-personales{
+    width: 70%;
+}
+.cont-hobbies{
+    width: 80%
+}  
+.footer-content{
+    text-align: center;
+}
+.brand{
+    margin-bottom: 2%;
+}
+}
+@media screen and (min-width:500xp){
+    
+    .menu-navegacion{
+        width: 65vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .hamburguer{
+        top: 20px;
+        right: 20px;
+    }
+    .head{
+        height:10px;
+    }
+
+    .contenedor-trayectoria img{
+        width:80%;
+        margin-bottom: 40px;
+    } 
+    .graduacion-trayectoria{
+    width: 80%;
+     }
+    .cont-hobbies{
+    width: 70%
+    }  
+    .footer-content{
+    text-align: center;
+    }
+    .brand{
+    margin-bottom: 2%;
+    }
+}
